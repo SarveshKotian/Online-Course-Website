@@ -1,0 +1,43 @@
+<div class="row">
+    <div class="schedule">
+    <div class="col-md-2">
+        <ul><br>
+            <a routerLink="/home"><li>Home</li></a><hr>
+            <a routerLink="/account"><li>My Account</li></a><hr>
+            <a routerLink="/schedule"><li style="background-color: rgb(202, 37, 194);">Schedule Lecture </li></a><hr>
+            <a routerLink="/books"><li>Buy books</li></a><hr>
+            <a routerLink="/lib"><li>My Books</li></a><hr>
+            <a routerLink="/delete"><li>Cancellation</li></a><hr>
+        </ul>
+    </div>
+
+    <div class="col-md-10">
+
+        <form>
+            <h2>Schedule Session</h2>
+            
+            <br>
+            <div class="form-group row col-sm-10">
+                Select a Date
+                <input type="date" [(ngModel)]="dos" name="dos" class="form-control">
+            </div>
+            <br>
+            <div class="form-group row col-sm-10">
+                Select a timing
+                <select name="time" [(ngModel)]="time"  class="form-control" placeholder="Select timing">
+                    <option value="7am">7am to 10am</option>
+                    <option value="10am">10am to 1pm</option>
+                    <option value="2pm">2pm to 5pm</option>
+                </select>
+            </div><br>
+
+            <div class="form-group row col-sm-4">
+            <button type="submit" (click)="updateStud()" style="margin-left:30px" class="btn btn-primary">Schedule</button>
+            </div><br>
+        </form>
+        
+
+        
+    </div>
+    </div>
+</div>

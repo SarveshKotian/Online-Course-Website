@@ -1,0 +1,52 @@
+hr
+{
+    padding: 0px;
+    margin: 0px;
+}
+div
+{
+    margin: auto;
+    margin: 0px;
+}
+ul
+{
+    margin: 0px;
+    padding: 0px;
+  list-style-type: none;  
+}
+a
+{
+    text-decoration: none;
+    color: black;
+}
+li
+{
+    padding: 20px;
+}
+li:hover
+{
+    background-color: rgb(202, 37, 194);
+}
+.account
+{  
+    height: 100%; 
+    width: 100%;
+    overflow: auto;
+
+    
+}
+table div 
+{
+    margin: auto;
+    font-size: 20px;
+}
+table
+{
+    width:1000px;
+    height:200px;
+    position: relative;
+    top: 30%;
+    left: 10%;
+    border: 0;
+}
+

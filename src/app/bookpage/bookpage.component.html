@@ -1,0 +1,42 @@
+
+<div class="account">
+    <div class="col-md-2" style="float: left; background-color:rgb(245, 209, 229);">
+        <ul><br>
+            <a routerLink="/home"><li>Home</li></a><hr>
+            <a routerLink="/account"><li>My Account</li></a><hr>
+            <a routerLink="/schedule"><li>Schedule Lecture </li></a><hr>
+            <a routerLink="/books"><li style="background-color: rgb(202, 37, 194);">Buy books</li></a><hr>
+            <a routerLink="/lib"><li>My Books</li></a><hr>
+            <a routerLink="/delete"><li>Cancellation</li></a><hr>
+        </ul>
+    </div>
+    <div class="col-md-10">
+    <br> 
+    <table id="table" class="table table-striped text-center" style="float: left; width:80%;">
+        <thead>
+        <tr>
+            <th scope="col">Photo</th>
+            <th scope="col">Name</th>
+            <th scope="col">Price</th>
+            <th scope="col">Action</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let b of bList">
+            
+            <td class="align-middle">
+                <img height="100px" src='./assets/images/book{{b.bid}}.jpg' alt="{{b.bookname}}">
+            </td>
+            <td class="align-middle">{{b.bookname}}</td>
+
+            <td class="align-middle">Rs. {{b.price}}</td>
+            <td class="align-middle"><input type="checkbox" [(ngModel)]="b.isSelected" (change)="Buy(b.bid,b.bookname)"></td>
+        </tr>
+    
+        </tbody>
+    </table>
+    <br>
+    <button type="submit" style="margin-left:775px" class="btn btn-primary" (click)="change()">Buy</button>
+    </div>
+</div>
+    

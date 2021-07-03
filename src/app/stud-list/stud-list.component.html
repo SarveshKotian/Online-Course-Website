@@ -1,0 +1,26 @@
+<div class="panel panel-primary">
+    <div class="panel-heading">
+      <h2>Student List</h2>
+    </div>
+    <div class="panel-body">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Course</th>
+            <th>Fee</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let s of myArray | async">
+            <td>{{s.id}}</td>
+            <td>{{s.name}}</td>
+            <td>{{s.course}}</td>
+            <td>{{s.fee}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  

@@ -1,0 +1,52 @@
+hr
+{
+    padding: 0px;
+    margin: 0px;
+}
+div
+{
+    margin: 0px;
+}
+ul
+{
+    margin: 0px;
+    padding: 0px;
+  list-style-type: none;  
+}
+a
+{
+    text-decoration: none;
+    color: black;
+}
+li
+{
+    padding: 20px 0px 20px 20px;
+}
+li:hover
+{
+    background-color:  rgb(202, 37, 194);
+}
+h2
+{
+    text-align: center;
+}
+
+h5
+{
+    text-align: center;
+    color:red;
+}
+
+.row
+{
+    background-color:rgb(245, 209, 229);  
+    height: 580px; 
+    width: 100%;
+}
+
+.home
+{
+    border-left: 1px solid black;
+    height: 580px; 
+    width: 100%;
+}

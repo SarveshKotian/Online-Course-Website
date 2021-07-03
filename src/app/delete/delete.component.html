@@ -1,0 +1,22 @@
+<div class="row">
+    <div class="del">
+    <div class="col-md-2">
+        <ul><br>
+            <a routerLink="/home"><li>Home</li></a><hr>
+            <a routerLink="/account"><li>My Account</li></a><hr>
+            <a routerLink="/schedule"><li>Schedule Lecture </li></a><hr>
+            <a routerLink="/books"><li>Buy books</li></a><hr>
+            <a routerLink="/lib"><li>My Books</li></a><hr>
+            <a routerLink="/delete"><li style="background-color: rgb(202, 37, 194)">Cancellation</li></a><hr>
+        </ul>
+    </div>
+    <form>
+        <h2>Delete Account</h2>
+        <br>
+        <br>
+        <div class="form-group row col-sm-6">
+            <button type="submit" (click)="deleteStuds()" class="btn btn-primary" style="margin-left:30px">Delete this Account</button>
+        </div><br>
+    </form>
+    </div>
+</div>

@@ -1,0 +1,25 @@
+<div class="row">
+    <div class="col-md-2">
+        <ul><br>
+            <a routerLink="/home"><li style="background-color: rgb(202, 37, 194);">Home</li></a><hr>
+            <a routerLink="/account"><li>My Account</li></a><hr>
+            <a routerLink="/schedule"><li>Schedule Lecture</li></a><hr>
+            <a routerLink="/books"><li>Buy books</li></a><hr>
+            <a routerLink="/lib"><li>My Books</li></a><hr>
+            <a routerLink="/delete"><li>Cancellation</li></a><hr>
+        </ul>
+    </div>
+    <div class="col-md-10">
+        <div class="home">
+            
+            <br><h2>Welcome to your Online Portal</h2>
+            <br>
+            <br>
+            <br>
+            <h5  *ngIf="d==1">Your next session is on: {{dos}} @ {{time}}</h5> <h5  *ngIf="d==0">You don't have a session scheduled</h5>
+            <br>
+            <br>
+            <button type="submit" routerLink="/session" style="margin-left:450px; font-size: 20px; padding: 15px 32px;" class="btn btn-primary" [disabled]="d==0">Join Session</button>
+        </div>
+    </div>
+</div>

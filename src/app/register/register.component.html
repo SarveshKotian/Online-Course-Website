@@ -1,0 +1,54 @@
+<div class="row" style="background-image: url('/assets/images/background.jpg');
+width:101%;
+height:660px;
+background-size:cover;
+background-position:90%;">
+    <div class="col-md-4"></div>
+    <div class="col-md-4" style="margin-top: 20px;background-color: rgba(240, 248, 255,0.8);height:620px;border-radius:5px;">
+        <hr>
+        <h3>Enrollment Form</h3>
+        <hr style="margin:0px;">
+        <form>
+            <div class="form-group row col-sm-8">
+                Full Name<b>*</b>
+                <input type="text" [(ngModel)]="stud.name" name="name" class="form-control" placeholder="Enter Full Name">
+            </div>
+            <div class="form-group row col-sm-8">
+                Mobile Number<b>*</b>
+                <input type="text" [(ngModel)]="stud.mobile" name="mobile" class="form-control" placeholder="Enter Mobile Number">
+            </div>
+            <div class="form-group row col-sm-8">
+                Date of Birth<b>*</b>
+                <input type="date" [(ngModel)]="stud.dob" name="dob" class="form-control">
+            </div>
+            <div class="form-group row col-sm-8">
+                Email ID<b>*</b>
+                <input type="email" [(ngModel)]="stud.emailid" name="emailid" class="form-control" placeholder="Enter Email ID">
+            </div>
+            <div class="form-group row col-sm-8">
+                Password<b>*</b>
+                <input type="password" [(ngModel)]="stud.password" name="password" class="form-control" placeholder="Enter Password">
+            </div>
+            <div class="form-group row col-sm-8">
+                Course<b>*</b>
+                <select name="course" [(ngModel)]="stud.course" class="form-control" placeholder="Select a course">
+                    <option value="cpp">C++</option>
+                    <option value="java">Java</option>
+                    <option value="sql">SQL</option>
+                    <option value="angular">Angular</option>
+                    <option value="python">Python</option>
+                </select>
+            </div><br>
+            <div class="form-group row col-sm-8">
+                Fee: Rs.{{stud.fee}} &nbsp;&nbsp;
+                <input type="submit" (click)="courseFee()" class="btn btn-primary btn-sm" value="Check Fees">
+            </div><br>
+
+            <div class="form-group row col-sm-8">
+            <button type="submit" (click)="registerUser()" style="margin-left:100px" class="btn btn-primary">Enroll</button>
+            </div><br>
+            
+        </form>
+    </div>
+    <div class="col-md-4"></div>
+</div>

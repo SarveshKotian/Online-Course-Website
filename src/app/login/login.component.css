@@ -1,0 +1,16 @@
+h3
+{
+    text-align: center;
+}
+form
+{
+    width: 500px;
+}
+form div 
+{
+    margin: auto;
+    font-size: 20px;
+    top: 30%;
+    left: 25%;
+    margin-left: -100px;
+}
